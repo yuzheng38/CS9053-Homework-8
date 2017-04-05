@@ -20,7 +20,7 @@ public class LambdaScheduler{
 		scheduler.add(job);
 	}
 
-	// Greedy algorithm
+	// Greedy algorithm - adding to result non-overlapping job with earliest finish time
 	public ArrayList<LambdaJob> scheduleJobs(){
 		Collections.sort(scheduler);
 		ArrayList<LambdaJob> result = new ArrayList<>();
